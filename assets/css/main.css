@@ -564,12 +564,9 @@ img {
 
 /*
 ============================
-Name:  SEOC - Digital Marketing Agency Templete
-Version: 1.0.0
+Name:  ItsoftExpert - Digital Marketing Agency
 Description: SEO - Digital Marketing Agency Templete
-Author: Vikiglab
-Author URI: https://themeforest.net/user/vikinglab/portfolio
-Location:
+Author: Vishal Dhanwan
 ============================
 */
 /*============= HEDAER CSS AREA ===============*/
@@ -588,6 +585,12 @@ Location:
 /*============= OTHERS CSS AREA ===============*/
 /*============= FOOTER CSS AREA ===============*/
 /*============= COMMON CSS AREA ===============*/
+
+.main-logo {
+  width: 170px;
+  height: auto;
+  object-fit: cover;
+}
 .heading1 h5 {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s16);
@@ -903,15 +906,20 @@ Location:
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s16);
   line-height: var(--ztc-font-size-font-s16);
-  font-weight: var(--ztc-weight-medium);
-  color: var(--ztc-text-text-6);
+  /* font-weight: var(--ztc-weight-medium); */
+  font-weight: 700;
+  /* color: var(--ztc-text-text-6); */
+  color: #fff;
+  /* background-clip: text; */
+  background-size: cover;
+  /* background-image: linear-gradient(75deg, #ff4c6c, #fa9d4d 80%); */
   border-radius: 8px;
   transition: all 0.4s;
   position: relative;
   padding: 6px 10px;
   z-index: 1;
   display: inline-block;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 .heading7 h5 img {
   margin: 0 6px 0 0;
@@ -924,17 +932,30 @@ Location:
   width: 100%;
   height: 100%;
   transition: all 0.4s;
-  background: var(--ztc-text-text-6);
+  /* background: var(--ztc-text-text-6); */
   opacity: 8%;
   border-radius: 8px;
 }
 .heading7 h1 {
-  font-family: var(--ztc-family-font1);
+  /* font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s64);
   line-height: var(--ztc-font-size-font-s74);
-  font-weight: var(--ztc-weight-semibold);
-  color: var(--ztc-text-text-2);
-  margin-bottom: 16px;
+  font-weight: var(--ztc-weight-semibold); */
+  /* color: var(--ztc-text-text-2); */
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+
+  vertical-align: middle;
+  font-size: 66px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  line-height: 90px;
+  padding-bottom: 20px;
+  color: #fff;
+  /* margin-bottom: 16px; */
 }
 @media (max-width: 767px) {
   .heading7 h1 {
@@ -942,22 +963,23 @@ Location:
     line-height: var(--ztc-font-size-font-s40);
   }
 }
-.heading7 h1 span {
+/* .heading7 h1 span {
   color: var(--ztc-text-text-6);
   display: inline-block;
   position: relative;
-}
+} */
 .heading7 h1 span img {
   position: absolute;
   left: 0;
   bottom: 0;
 }
 .heading7 p {
-  font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s16);
+  font-family: Poppins, sans-serif;
+  font-size: 17px;
   line-height: var(--ztc-font-size-font-s26);
   font-weight: var(--ztc-weight-regular);
-  color: var(--ztc-text-text-3);
+  /* color: var(--ztc-text-text-3); */
+  color: #fff;
 }
 
 .heading8 h5 {
@@ -1324,9 +1346,8 @@ Location:
   display: inline-block;
   font-size: var(--ztc-font-size-font-s18);
   font-family: var();
-  color: var(--ztc-text-text-6);
-  border-top: 1px solid var(--ztc-text-text-6);
-  border-bottom: 1px solid var(--ztc-text-text-6);
+  border-top: 1px solid;
+  border-bottom: 1px solid;
   padding: 15px 0;
   font-weight: var(--ztc-weight-bold);
   transition: all 0.4s;
@@ -1334,7 +1355,7 @@ Location:
 }
 .header-btn6:hover {
   letter-spacing: 1px;
-  color: var(--ztc-text-text-6);
+  color: #fa9d4d;
   transition: all 0.4s;
 }
 
@@ -3810,12 +3831,13 @@ Location:
   }
 }
 
-.hero4-section-area {
+/* .hero4-section-area {
   position: relative;
   padding: 180px 0 0;
+  padding: 130px 0 0;
   background: var(--ztc-bg-bg-16);
   overflow: hidden;
-}
+} */
 .hero4-section-area .hero4-header {
   position: relative;
 }
@@ -8650,7 +8672,8 @@ html {
   z-index: 9999;
   padding: 16px 0;
   transition: all 0.4s;
-  background: var(--ztc-text-text-1);
+
+  /* background: var(--ztc-text-text-1); */
 }
 .homepage4-body .header-area.homepage4 nav#navbar-example2 {
   display: block;
@@ -8918,9 +8941,10 @@ html {
 }
 .homepage4-body .header-area.homepage4 .header-elements .main-menu ul li a {
   font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s18);
+  font-size: 17px;
   font-weight: var(--ztc-weight-medium);
-  color: var(--ztc-text-text-2);
+  /* color: var(--ztc-text-text-2); */
+  color: #fff;
   display: inline-block;
   transition: all 0.4s;
   padding: 0 20px;
@@ -8953,7 +8977,7 @@ html {
   border-radius: 5px;
   padding: 15px;
   /* left: -315px; */
-  left: -255px;
+  left: -284px;
   width: 1300px;
   max-height: 600px;
   overflow: hidden;
@@ -9106,9 +9130,9 @@ html {
   animation-name: fade-in-down;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  background: var(--ztc-text-text-1);
+  background: #000;
   transition: all 0.4s;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+      box-shadow: #212529 0px 25px 20px -20px;
 }
 
 .homepage5-body {
@@ -16523,3 +16547,135 @@ html {
 }
 
 /*============= CASE STUDY CSS AREA ENDS ===============*/ /*# sourceMappingURL=main.css.map */
+
+.hero4-section-area {
+  position: relative;
+  padding: 130px 0 0;
+  overflow: hidden;
+  /* height: 100vh; */
+  /* background: rgb(0 0 0 / 70%); */
+  background: rgb(0 0 0 / 62%);
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.higlighttext {
+  color: #fff !important;
+}
+
+/* From Uiverse.io by vikiWayne */
+.banner-btn {
+  padding: 10px 5em;
+  border: none;
+  border-radius: 20px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  /* text-transform: uppercase; */
+  cursor: pointer;
+  color: #fff;
+  transition: all 1000ms;
+  font-size: 17px;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(75deg, #ff4c6c, #fa9d4d 80%);
+  outline: 4px solid #fff;
+  margin-top: 5px;
+  text-shadow: 4px 3px 5px #00000069;
+}
+
+.banner-btn:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #fff;
+  box-shadow: 4px 5px 17px -4px #ff4c6c;
+}
+
+.banner-btn::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ff4c6c;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.banner-btn:hover::before {
+  width: 250%;
+}
+
+.ratings-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.7);  */
+  padding: 20px;
+  gap: 40px;
+}
+
+.rating {
+  text-align: center;
+  color: #fff;
+}
+
+.rating-logo {
+  max-width: 130px;
+  /* margin-bottom: 10px; */
+}
+
+.stars {
+  font-size: 1.5rem;
+  color: #ffc107; /* Star color */
+  margin-bottom: 5px;
+}
+
+.rating-text {
+  font-size: 1rem;
+}
+
+.banner-app {
+  background-image: linear-gradient(75deg, #f83357, #f79137 80%);
+  /* text-shadow: 4px 3px 5px #ffffff38; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  -webkit-text-fill-color: transparent;
+}
+
+#app {
+  font-size: 66px;
+  /* background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  ) !important;
+  background-clip: border-box !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  animation: textclip 2s linear infinite !important; */
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center !important;
+  }
+}
+
+/* .Typewriter__cursor {
+  display: none;
+} */
