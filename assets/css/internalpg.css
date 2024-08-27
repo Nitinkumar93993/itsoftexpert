@@ -113,6 +113,13 @@ body {
 
 }
 
+.fav-icon{
+    max-width: 100px;
+    opacity: 0;
+    position: absolute;
+    transition: transform 0.5s ease-in-out, opacity .5s ease-in-out;
+    z-index: 5;
+}
 .small-image {
     max-width: 200px;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -125,7 +132,7 @@ body {
     max-width: 940px;
     opacity: 0;
     position: absolute;
-    transition: transform 0.5s ease-in, opacity .5s ease-in;
+    transition: transform 0.5s ease-in-out, opacity .5s ease-in-out;
     z-index: 5;
 
 }
