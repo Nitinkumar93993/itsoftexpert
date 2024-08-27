@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.big-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c1e4f7;
+    padding: 20px;
+    max-width: 100%;
+}
+
+
+.heading {
+    background-color: #1877F2;
+    width: 70%;
+    height: 15vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2vh;
+    font-weight: 900;
+}
+
+.heading-title {
+    margin: 0;
+    font-size: 2em;
+    FONT-WEIGHT: 900;
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.subheading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 5px 5px gray;
+
+    /* transition: transform 0.3s ease-in-out; */
+}
+
+.subheading-container:hover {
+    /* transform: scale(1.05); */
+    background-color:rgba(154, 158, 34, 0.56);
+    color: black;
+}
+
+.subheading {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    FONT-FAMILY: system-ui;
+}
+
+.subheading-text {
+    font-size: 1em;
+    text-align: center;
+}
+
+.image-section{
+    height: 90vh;
+    position: relative;
+    /* background-color: #4CAF50; */
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    background: linear-gradient(60deg, rgba(50, 221, 11, 0.2) 25%, rgba(22, 22, 22, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%);
+    background-size: 200% 100%;
+    animation: backgroundAnimation 10s linear infinite;
+    
+}
+.image-container {
+    /* background-image: url('assets/img/all-images/myseo.png'); */
+    position: relative;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30vh 0;
+
+  
+
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+.small-image {
+    max-width: 200px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    position: absolute;
+    z-index: 5;
+    /* width: 30px; */
+}
+
+.big-image {
+    max-width: 940px;
+    opacity: 0;
+    position: absolute;
+    transition: transform 0.5s ease-in, opacity .5s ease-in;
+    z-index: 5;
+
+}
+
+
+
+
+
+.subheading-list {
+    margin-top: 1em;
+    padding-left: 20px;
+    /* Add padding to align bullets */
+    color: #070707;
+    /* Match text color with the rest of the content */
+    font-size: 1.1rem;
+}
+
+.subheading-list li {
+    margin-bottom: 0.5em;
+    /* Add some space between each point */
+    list-style-type: disc;
+    /* You can change to circle, square, etc. */
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .heading{
+        max-width: 768px;
+    }
+    .heading-title {
+
+        font-size: 1.5em;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .subheading-container {
+        padding: 15px;
+    }
+
+    .subheading {
+        font-size: 1.2em;
+    }
+
+    .image-section{
+        display:none;
+    }
+}
+
+.sec {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
