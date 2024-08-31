@@ -72,30 +72,31 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-document.getElementById("modeToggle").addEventListener("click", function() {
+// document.getElementById("modeToggle").addEventListener("click", function() {
     
-    document.body.classList.toggle("day-mode");
+//     document.body.classList.toggle("day-mode");
     
-    if(document.body.classList.contains("day-mode")) {
-        this.textContent = "Switch to Night Mode";
-    } else {
-        this.textContent = "Switch to Day Mode";
-    }
-});
+//     if(document.body.classList.contains("day-mode")) {
+//         this.textContent = "Switch to Night Mode";
+//     } else {
+//         this.textContent = "Switch to Day Mode";
+//     }
+// });
 
-document.addEventListener("DOMContentLoaded", function () {
-    alert('asd');
-    const heading = document.querySelector(".heading-title");
-    const text = heading.innerText;
-    heading.innerHTML = ""; // Clear the heading content
+// document.addEventListener("DOMContentLoaded", function () {
+//     alert('asd');
+//     const heading = document.querySelector(".heading-title");
+//     const text = heading.innerText;
+//     heading.innerHTML = ""; // Clear the heading content
     
-    text.split("").forEach((char, i) => {
-        const span = document.createElement("span");
-        span.style.setProperty('--i', i); // Set the index as a CSS variable
-        span.textContent = char;
-        heading.appendChild(span);
-    });
-});
+//     text.split("").forEach((char, i) => {
+//         const span = document.createElement("span");
+//         span.style.setProperty('--i', i); // Set the index as a CSS variable
+//         span.textContent = char;
+//         heading.appendChild(span);
+//     });
+// });
+
 
 
 
