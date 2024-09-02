@@ -16668,7 +16668,7 @@ html {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
-  text-fill-color: transparent !important;
+  /* text-fill-color: transparent !important; */
   -webkit-text-stroke: 1px #fff !important;
   -webkit-text-fill-color: transparent !important;
 }
@@ -16933,7 +16933,7 @@ ul li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; */
   /* -webkit-text-stroke: 1px #fff; */
   -webkit-text-fill-color: transparent;
 }
@@ -17856,7 +17856,7 @@ footer .widget ul {
 .widget_gallery li {
   display: inline-block;
   width: 33.33%;
-  float: left;
+  /* float: left; */
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
