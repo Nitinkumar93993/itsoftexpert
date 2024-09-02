@@ -35,44 +35,14 @@
   <script>
 
 
+
+
     //  HEADING Animation
 
-    document.addEventListener("DOMContentLoaded", function () {
-      const heading = document.querySelector(".heading-title");
-      const text = heading.innerText;
-      heading.innerHTML = ""; // Clear the heading content
-
-      // Split the text into an array of words
-      const words = text.split(" ");
-
-      words.forEach((word, wordIndex) => {
-        if (word === "SEO") {
-          // Create a span for the word "SEO" and add the highlight class
-          const span = document.createElement("span");
-          span.classList.add("main-heading-text");
-          span.textContent = word;
-
-          heading.appendChild(span);
-        } else {
-          // For other words, split into characters and create spans for each
-          word.split("").forEach((char, i) => {
-            const span = document.createElement("span");
-            span.style.setProperty('--i', i);
-            span.textContent = char;
-            heading.appendChild(span);
-          });
-        }
-
-        // Add a space after each word except the last one
-        if (wordIndex < words.length - 1) {
-          heading.appendChild(document.createTextNode(" "));
-        }
-      });
-    });
 
 
 
-    // FIRST ANIMATION 
+    // FIRST ANIMATION
     // document.addEventListener("DOMContentLoaded", function () {
     //     const subheadings = document.querySelectorAll(".subheading");
 
@@ -97,52 +67,6 @@
 
 
     // SECOND ANIMATION 
-    document.addEventListener("DOMContentLoaded", function () {
-      const subheadings = document.querySelectorAll(".subheading");
-
-      // Function to split subheading into individual characters
-      function splitText(element) {
-        const text = element.innerText;
-        element.innerHTML = ""; // Clear the existing text
-
-        text.split("").forEach((char, i) => {
-          const span = document.createElement("span");
-          span.style.setProperty('--i', i); // Set a custom property for animation delay
-
-          if (char === " ") {
-            span.style.display = "inline-block";
-            span.style.width = "0.5em"; // Adjust width as needed
-            span.textContent = " ";
-          } else {
-            span.textContent = char;
-          }
-
-          element.appendChild(span);
-        });
-      }
-
-      // Apply the splitText function to each subheading
-      subheadings.forEach(subheading => {
-        splitText(subheading);
-      });
-
-      // Set up the Intersection Observer
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            // Add the animation class when the subheading is in view
-            entry.target.classList.add("animate");
-            observer.unobserve(entry.target); // Stop observing once the animation is triggered
-          }
-        });
-      }, {
-        threshold: 0.1 // Trigger when 10% of the subheading is in view
-      });
-
-      subheadings.forEach(subheading => {
-        observer.observe(subheading); // Start observing each subheading
-      });
-    });
 
 
   </script>
@@ -203,7 +127,7 @@
               </div>
               <div class="main-menu">
                 <ul>
-                  <li><a href="#">Digital Marketing <i class="fa-solid fa-angle-down"></i></a>
+                  <li><a href="#">Digital Marketing <i class="fa-solid fa-angle-down menu-heading"></i></a>
                     <ul class="dropdown-padding">
                       <li><a href="service1.html">Seo</a></li>
                       <li><a href="service2.html">Pay Per Click | Ppc</a></li>
@@ -424,10 +348,12 @@
       <img src="assets/img/all-images/sun.png" alt="Day Mode" id="toggle-icon">
     </button>
 
-    <br><br><br>
-    <header class="heading">
-      <h1 class="heading-title">Best Professional SEO Service</h1>
-    </header>
+  
+    <section class="seo-section">
+      <header class="heading">
+        <h1 class="heading-title">Best Professional SEO Service</h1>
+      </header>
+    </section>
 
     <section class="content">
 
@@ -445,11 +371,12 @@
           guaranteeing that they successfully reach their target market and maintain their competitiveness in
           the online marketplace. ((((-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident dolorum non
           placeat possimus hic similique eligendi repudiandae omnis maxime perferendis! </p>
-        <img src="assets/img/all-images/seo-main.png" alt="Image 1" class="content-image">
+        <img src="assets/img/all-images/try5.png" alt="Image 1" class="content-image">
       </div>
 
       <h3 class="subheading">TAKE YOUR BUSINESS TO THE HIGH LEVEL</h3>
-      <p class="subheading-text">iTSoftexpert is your go-to partner for boosting your website to the top of search
+      <p class="subheading-text color-change-text">iTSoftexpert is your go-to partner for boosting your website to the
+        top of search
         rankings and increasing organic traffic.Our knowledgeable staff provides cutting-edge technical methods that aim
         to raise your brand awareness in addition to increasing the total number and quality of organic visitors to your
         website. We use cutting-edge SEO strategies customized to your company's requirements to guarantee a strong
@@ -941,7 +868,7 @@
   <div class="cta4-section-area">
     <img src="assets/img/bg/cta-bg5.png" alt="" class="cta-bg1 aniamtion-key-2">
     <img src="assets/img/bg/cta-bg4.png" alt="" class="cta-bg2 aniamtion-key-1">
-    <div class="container">
+    <div class="container ">
       <div class="row">
         <div class="col-lg-12 m-auto">
           <div class="cta-header-area text-center sp4 heading2">
@@ -1301,36 +1228,7 @@
 
 
 
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggleButton = document.getElementById('toggle-button');
-      const toggleIcon = document.getElementById('toggle-icon');
-      const bigContainer = document.querySelector('.big-container');
-      const Content = document.querySelector('.content');
-      const Headings = document.querySelector('.heading-title');
-      const Subheadings = document.querySelectorAll('.subheading'); // Select all subheadings
-      const whatheading = document.querySelector('.heading-what-we-do');
 
-      toggleButton.addEventListener('click', () => {
-        bigContainer.classList.toggle('light-mode');
-
-        if (bigContainer.classList.contains('light-mode')) {
-          toggleIcon.src = 'assets/img/all-images/moon.png';
-          toggleIcon.alt = 'Night Mode';
-        } else {
-          toggleIcon.src = 'assets/img/all-images/sun.png';
-          toggleIcon.alt = 'Day Mode';
-        }
-
-        Content.classList.toggle('light-mode');
-        Headings.classList.toggle('light-mode');
-        whatheading.classList.toggle('light-mode');
-
-        // Apply the light-mode class to each subheading
-        Subheadings.forEach((subheading) => {
-          subheading.classList.toggle('light-mode');
-        });
-      });
-    });
 
 
   </script>
