@@ -151,13 +151,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const Subheadings = document.querySelectorAll('.subheading'); 
     const whatheading = document.querySelector('.heading-what-we-do');
     // const headerdropdown = document.querySelectorAll('.fa-angle-down');
-    const mainHeadermenu = document.querySelectorAll('.main-menu > ul > li > a');
-    const dropdown = document.querySelectorAll('.dropdown-padding');
+    // const mainHeadermenu = document.querySelectorAll('.main-menu > ul > li');
+    // const dropdown = document.querySelectorAll('.dropdown-padding');
     const ctaarea = document.querySelector('.cta4-section-area');
     const cta1 = document.querySelector('.cta-header-area > h2');
     const cta2 = document.querySelector('.cta-header-area > p');
     const cta3 = document.querySelector('.banner-btn');
-    const logo = document.querySelector('.main-logo');
+    // const logo = document.querySelector('.main-logo');
+    // const header = document.querySelector('.header-area');
+    // const fstmenu = document.querySelector('.menu-heading');
 
 
     toggleButton.addEventListener('click', () => {
@@ -179,19 +181,26 @@ document.addEventListener('DOMContentLoaded', function () {
         cta2.classList.toggle('light-mode');
         cta3.classList.toggle('light-mode');
         logo.classList.toggle('light-mode');
+        // header.classList.toggle('light-mode');
+        // fstmenu.classList.toggle('light-mode');
+        
 
         // Apply the light-mode class to each subheading
         Subheadings.forEach((subheading) => {
             subheading.classList.toggle('light-mode');
         });
 
-        mainHeadermenu.forEach((heading) => {
-            heading.classList.add('light-mode');
-        });
+        // headerdropdown.forEach((element) => {
+        //     element.add('light-mode');
+        // });
 
-        dropdown.forEach((element) =>{
-            element.classList.add('light-mode');
-        })
+        // mainHeadermenu.forEach((element)=>{
+        //     element.add('light-mode');
+        // });
+         
+        // dropdown.forEach((element) =>{
+        //     element.classList.add('light-mode');
+        // })
 
        
     });
